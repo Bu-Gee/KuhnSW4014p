@@ -8,3 +8,9 @@ and modify it as you see fit.
 cd <repo dir>
 zip -r ../kuhnSW4014p.zip .
 ```
+
+## Licensing
+
+This is NOT free software.
+
+This is derived from the FS19 base Kuhn SW 4014 baler and is owned by GIANTS.  Please do not treat it as free software.
