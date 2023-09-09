@@ -6,7 +6,7 @@ and modify it as you see fit.
 ## Make a ZIP file suitable for MP
 ```
 cd <repo dir>
-zip -r ../kuhnSW4014p.zip .
+zip -r ../kuhnSW4014p.zip . -x "./.git/*" -x README.md
 ```
 
 ## Licensing
