@@ -3,14 +3,14 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>SW 4014</name>
+        <name>SW 4014 Turbo 5x</name>
         <functions>
             <function>$l10n_function_baleWrapper</function>
         </functions>
         <specs>
             <fillTypes>squareBale roundBale</fillTypes>
         </specs>
-        <image>$data/vehicles/kuhn/kuhnSW4014/store_kuhnSW4014.png</image>
+        <image>store_kuhnSW4014p.png</image>
         <price>54000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
@@ -27,7 +27,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_baleWrapper</typeDesc>
-        <filename>$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014.i3d</filename>
+        <filename>kuhnSW4014p.i3d</filename>
         <size width="3.5" length="5" widthOffset="0.8" lengthOffset="0.8" />
         <components>
             <component centerOfMass="0.72 0.6 -0.5" solverIterationCount="10" mass="1750" />
@@ -66,7 +66,7 @@
 
     <attachable>
         <inputAttacherJoints>
-            <inputAttacherJoint rootNode="kuhnSW4014_attacher_component2" node="attacherJoint" jointType="implement" lowerTransLimitScale="0 0 0" isDefaultLowered="true" needsLowering="false" allowsLowering="false" >
+            <inputAttacherJoint rootNode="kuhnSW4014p_attacher_component2" node="attacherJoint" jointType="implement" lowerTransLimitScale="0 0 0" isDefaultLowered="true" needsLowering="false" allowsLowering="false" >
                 <distanceToGround lower="0.556" upper="0.556" />
             </inputAttacherJoint>
         </inputAttacherJoints>
@@ -133,7 +133,7 @@
         </movingParts>
 
         <sounds>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="kuhnSW4014_main_component1"/>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="kuhnSW4014p_main_component1"/>
         </sounds>
     </cylindered>
 
@@ -194,9 +194,9 @@
         <grabber node="grabNode" nearestDistance="0.8" />
         <roundBaleWrapper baleNode="baleNode" wrapperNode="fakeAnimationNodeLoadUnload" wrapperRotAxis="2" wrappingTime="14.8" >
             <animations>
-                <moveToWrapper animName="moveRoundBaleToWrapper" animSpeed="1" reverseAfterMove="false" />
-                <wrapBale animName="wrapRoundBale" animSpeed="1" />
-                <dropFromWrapper animName="dropRoundBaleFromWrapper" animSpeed="1" />
+                <moveToWrapper animName="moveRoundBaleToWrapper" animSpeed="5" reverseAfterMove="false" />
+                <wrapBale animName="wrapRoundBale" animSpeed="5" />
+                <dropFromWrapper animName="dropRoundBaleFromWrapper" animSpeed="5" />
             </animations>
 
             <baleTypes>
@@ -227,9 +227,9 @@
             </wrappingState>
 
             <sounds wrappingEndTime="0.8969">
-                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014_main_component1" />
-                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014_main_component1" />
-                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014_main_component1" />
+                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014p_main_component1" />
+                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014p_main_component1" />
+                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014p_main_component1" />
             </sounds>
 
             <wrappingCollisions>
@@ -239,9 +239,9 @@
 
         <squareBaleWrapper baleNode="baleNode" wrapperNode="fakeAnimationNodeLoadUnload" wrapperRotAxis="2" wrappingTime="14.8" unloadBaleText="action_unloadSquareBale">
             <animations>
-                <moveToWrapper animName="moveSquareBaleToWrapper" animSpeed="1" reverseAfterMove="false" />
-                <wrapBale animName="wrapSquareBale" animSpeed="1" />
-                <dropFromWrapper animName="dropSquareBaleFromWrapper" animSpeed="1" />
+                <moveToWrapper animName="moveSquareBaleToWrapper" animSpeed="5" reverseAfterMove="false" />
+                <wrapBale animName="wrapSquareBale" animSpeed="5" />
+                <dropFromWrapper animName="dropSquareBaleFromWrapper" animSpeed="5" />
             </animations>
 
             <baleTypes>
@@ -262,9 +262,9 @@
             </wrappingState>
 
             <sounds wrappingEndTime="0.8969">
-                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014_main_component1" />
-                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014_main_component1" />
-                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014_main_component1" />
+                <start template="BALE_WRAPPING_START" linkNode="kuhnSW4014p_main_component1" />
+                <wrap template="BALE_WRAPPING_01" linkNode="kuhnSW4014p_main_component1" />
+                <stop template="BALE_WRAPPING_STOP" linkNode="kuhnSW4014p_main_component1" />
             </sounds>
 
             <wrappingCollisions>
@@ -274,7 +274,7 @@
     </baleWrapper>
 
     <baseMaterial>
-        <material name="kuhnSW4014_mat" baseNode="kuhnSW4014_vis">
+        <material name="kuhnSW4014p_mat" baseNode="kuhnSW4014p_vis">
             <shaderParameter name="colorMat0" value="KUHN_RED1"/>
         </material>
     </baseMaterial>
@@ -294,8 +294,8 @@
     <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
 
     <i3dMappings>
-        <i3dMapping id="kuhnSW4014_main_component1" node="0>" />
-        <i3dMapping id="kuhnSW4014_vis" node="0>0" />
+        <i3dMapping id="kuhnSW4014p_main_component1" node="0>" />
+        <i3dMapping id="kuhnSW4014p_vis" node="0>0" />
         <i3dMapping id="wheelLeft" node="0>0|0" />
         <i3dMapping id="backlightLeft" node="0>0|1|0|0" />
         <i3dMapping id="yellowRound02" node="0>0|1|0|1" />
@@ -332,7 +332,7 @@
         <i3dMapping id="baleWrapLeft" node="0>0|9|1" />
         <i3dMapping id="mainRotor_silage" node="0>0|9|7" />
         <i3dMapping id="belt" node="0>0|10|1" />
-        <i3dMapping id="kuhnSW4014_attacher_component2" node="1>" />
+        <i3dMapping id="kuhnSW4014p_attacher_component2" node="1>" />
         <i3dMapping id="attacherJoint" node="1>0" />
         <i3dMapping id="drawbarAttacherRotYRef" node="1>1" />
     </i3dMappings>

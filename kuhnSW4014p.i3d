@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="kuhnSW4014" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="kuhnSW4014p" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
 
   <Files>
-    <File fileId="1" filename="kuhnSW4014_normal.png" />
-    <File fileId="2" filename="kuhnSW4014_specular.png" />
-    <File fileId="4" filename="kuhnSW4014Decals_diffuse.png" />
-    <File fileId="5" filename="../../../shared/default_normal.png" />
-    <File fileId="6" filename="kuhnSW4014Decals_specular.png" />
-    <File fileId="7" filename="../../../shared/silageWrap_diffuse.png" />
-    <File fileId="8" filename="../../../shared/silageWrap_specular.png" />
-    <File fileId="10" filename="kuhnSW4014belt_normal.png" />
-    <File fileId="11" filename="kuhnSW4014belt_specular.png" />
-    <File fileId="12" filename="../kuhnWrap750_diffuse.png" />
-    <File fileId="13" filename="../kuhnWrap750_specular.png" />
-    <File fileId="15" filename="../../../shared/assets/assetLibraryDecals_normal.png" />
-    <File fileId="14" filename="../../../shared/assets/assetLibraryDecals_diffuse.png" />
-    <File fileId="16" filename="kuhnSW4014Decals_specular.png" />
-    <File fileId="9" filename="../../../shaders/backLightShader.xml" />
-    <File fileId="3" filename="../../../shaders/vehicleShader.xml" />
+    <File fileId="1" filename="kuhnSW4014p_normal.png" />
+    <File fileId="2" filename="kuhnSW4014p_specular.png" />
+    <File fileId="4" filename="kuhnSW4014pDecals_diffuse.png" />
+    <File fileId="5" filename="$data/shared/default_normal.png" />
+    <File fileId="6" filename="kuhnSW4014pDecals_specular.png" />
+    <File fileId="7" filename="$data/shared/silageWrap_diffuse.png" />
+    <File fileId="8" filename="$data/shared/silageWrap_specular.png" />
+    <File fileId="10" filename="kuhnSW4014pbelt_normal.png" />
+    <File fileId="11" filename="kuhnSW4014pbelt_specular.png" />
+    <File fileId="12" filename="$data/vehicles/kuhn/kuhnWrap750_diffuse.png" />
+    <File fileId="13" filename="$data/vehicles/kuhn/kuhnWrap750_specular.png" />
+    <File fileId="15" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="14" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="16" filename="kuhnSW4014pDecals_specular.png" />
+    <File fileId="9" filename="$data/shaders/backLightShader.xml" />
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
   </Files>
 
   <Materials>
     <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1" specularColor="0 0 0" ambientColor="1 1 1">
     </Material>
-    <Material name="kuhnSW4014_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="kuhnSW4014p_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
       <CustomParameter name="colorMat0" value="0.5860 0.0114 0.0094 0"/>
       <CustomParameter name="colorMat1" value="1.0000 0.8751 0.0000 1"/>
       <Normalmap fileId="1"/>
       <Glossmap fileId="2"/>
     </Material>
-    <Material name="kuhnSW4014Decals_mat" materialId="5" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+    <Material name="kuhnSW4014pDecals_mat" materialId="5" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
       <CustomParameter name="RDT" value="1.0 1.0 4.0 4.0"/>
       <Texture fileId="4"/>
       <Normalmap fileId="5"/>
@@ -41,7 +41,7 @@
       <Texture fileId="7"/>
       <Glossmap fileId="8"/>
     </Material>
-    <Material name="kuhnSW4014belt_mat" materialId="8" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="CABLE_TRAY_colorMask">
+    <Material name="kuhnSW4014pbelt_mat" materialId="8" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="CABLE_TRAY_colorMask">
       <CustomParameter name="colorMat2" value="0.0356 0.0356 0.0356 5"/>
       <CustomParameter name="colorMat3" value="0.0356 0.0356 0.0356 5"/>
       <CustomParameter name="colorMat0" value="0.0356 0.0356 0.0356 5"/>
@@ -73,12 +73,12 @@
   </Materials>
 
 
-  <Shapes externalShapesFile="kuhnSW4014.i3d.shapes">
+  <Shapes externalShapesFile="kuhnSW4014p.i3d.shapes">
   </Shapes>
 
   <Scene>
-    <Shape name="kuhnSW4014_main_component1" shapeId="1" dynamic="true" compound="true" density="2" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
-      <Shape name="kuhnSW4014_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 13 16 17 26 27 29 147" nodeId="2">
+    <Shape name="kuhnSW4014p_main_component1" shapeId="1" dynamic="true" compound="true" density="2" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="kuhnSW4014p_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 13 16 17 26 27 29 147" nodeId="2">
         <TransformGroup name="wheelLeft" translation="1.78482 0.406599 -0.769293" nodeId="3"/>
         <TransformGroup name="lights" translation="0 -0.227378 0" nodeId="4">
           <TransformGroup name="sharedLights" translation="0 0.227378 0" nodeId="5">
@@ -271,7 +271,7 @@
         <Shape name="colPart1" visibility="false" shapeId="29" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="143"/>
       </TransformGroup>
     </Shape>
-    <Shape name="kuhnSW4014_attacher_component2" translation="2.53461 0.618058 3.21916" rotation="0 11.6569 0" scale="1 1 1" shapeId="30" dynamic="true" compound="true" density="40" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="144">
+    <Shape name="kuhnSW4014p_attacher_component2" translation="2.53461 0.618058 3.21916" rotation="0 11.6569 0" scale="1 1 1" shapeId="30" dynamic="true" compound="true" density="40" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="144">
       <TransformGroup name="attacherJoint" translation="-0.000555162 -0.0624594 0.000284557" rotation="0 89.9512 0" scale="1 1 1" nodeId="145"/>
       <TransformGroup name="drawbarAttacherRotYRef" translation="0.329567 -0.0624594 0.000565838" rotation="0 89.9512 0" scale="1 1 1" nodeId="146"/>
       <TransformGroup name="drawbarAttacher" translation="-0.000555162 -0.0624594 0.000284557" rotation="0 89.9512 0" scale="1 1 1" collision="false" nodeId="147"/>
@@ -279,7 +279,7 @@
   </Scene>
 
 
-  <Animation externalAnimFile="kuhnSW4014.i3d.anim" />
+  <Animation externalAnimFile="kuhnSW4014p.i3d.anim" />
   <UserAttributes>
     <UserAttribute nodeId="28">
       <Attribute name="liw" type="boolean" value="false"/>
